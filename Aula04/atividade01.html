@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <h2>Laço While</h2>
+    <p id="while"></p>
+</body>
+<script>
+      //Laço While ( Enquanto )
+      var text = "";
+      var cont = 1;
+      var qdt = 200;
+      while(cont <= qdt){
+          text = text + "<br> O número é "+cont;
+          //alert("Roda Gigante Volta: "+cont);
+          cont++;
+      }
+      document.getElementById("while").innerHTML = text;
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h2>Tabuada</h2>
+    <input type="number" id="numero">
+    <button onclick="gerarTabuada()">Gerar Tabuada</button>
+    <p id="tabuada"></p>
+
+    <script>
+        function gerarTabuada() {
+            var numero = parseInt(document.getElementById("numero").value);
+            var tabuada = "";
+            
+            if (numero) {
+                for (var i = 0; i <= 10; i++) {
+                    tabuada += numero + " x " + i + " = " + (numero * i) + "<br>";
+                }
+            } else {
+                tabuada = "Por favor, insira um número válido.";
+            }
+
+            document.getElementById("tabuada").innerHTML = tabuada;
+        }
+    </script>
+</body>
+</html>

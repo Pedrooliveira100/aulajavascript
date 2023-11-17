@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+<body>
+    <h3>Texto</h3>
+    <p id="demo"></p>
+    <button onclick="aumentar()">Zoom +</button>
+    <button onclick="diminuir()">Zoom -</button>
+
+    <h3>Lâmpadas</h3>
+    
+    <button onclick="document.getElementById('lampada').src='img/acesa.gif'">Ligar</button>
+
+    <img id="lampada" src="img/apagada.gif" style="width: 100px;">
+
+    <button onclick="document.getElementById('lampada').src='img/apagada.png'">Desligar</button>
+
+    <h3>Atividade JavaScript</h3>
+    <button onmouseover="document.getElementById('vela').src='img/acesa.png'">Acesa</button>
+
+    <img id="vela" src="img/acesa.jpg" style="width: 100px;">
+
+    <button onmouseover="document.getElementById('vela').src='img/apagada.png'">Apagada</button>
+</body>
+<script src="js/script.js">
+</script>
+
+</html>

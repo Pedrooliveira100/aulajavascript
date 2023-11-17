@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h2>Laço FOR</h2>
+    <p id="for"></p>
+
+    <h2>Laço While</h2>
+    <p id="while"></p>
+
+    <h2>Tabuada</h2>
+    <p id="tab"></p>
+</body>
+<script>
+    //Laço While ( Enquanto )
+    var text = "";
+    var cont = 1;
+    var qdt = 5;
+    while(cont <= qdt){
+        text = text + "<br> O número é "+cont;
+        //alert("Roda Gigante Volta: "+cont);
+        cont++;
+    }
+    document.getElementById("while").innerHTML = text;
+
+    //Laço FOR
+    var texto = "";
+    for(var cont=1; cont<=10; cont++){
+        texto = texto + "O número é:"+cont+"<br>";
+    }
+    document.getElementById("for").innerHTML = texto;
+
+    //Tabuada 8
+    var texto = "";
+    for(let i=0; i<=10; i++){
+        texto = texto + "8 X "+i+" = "+8*i+"<br>";
+    }
+    document.getElementById("tab").innerHTML = texto;
+
+
+
+
+</script>
+</html>
